@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="./index.html">PN WebDev</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./AboutMe.html">About me</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./Portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Calculator.html">Price calculator</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section">
+    <div class="container">
+      <h2 class="mb-5">My Portfolio</h2>
+      <p class="subtitle mb-5">Check out some of my projects</p>
+      <div class="row mb-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card animated-card">
+            <h3>Read@Sea</h3>
+            <p>App for controlling meter readings at ships</p>
+            <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#project1Modal">View technology</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card animated-card">
+            <h3>Sodo 2.0</h3>
+            <p>App for managing proccess of collecting used tires</p>
+            <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#project2Modal">View technology</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card animated-card">
+            <h3>StarWatch</h3>
+            <p>Website for company that creates websites</p>
+            <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#project3Modal">View technology</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project1ModalLabel">Read@Sea was created using React.JS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-description">
+            <img src="./img/image8.png" alt="Read@Sea">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project2ModalLabel">SODO 2.0 was created using React.JS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-description">
+            <img src="./img/image7.png" alt="Sodo">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project3ModalLabel">StarWatch was created using ReactJS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-description">
+            <img src="./img/image9.png" alt="STRWH">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        $('.project-card').each(function() {
+          var position = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+
+          if (position < scroll + windowHeight - 100) {
+            $(this).addClass('animated-card');
+          }
+        });
+      });
+    });
+  </script>
+  <footer class="bg-dark text-light py-2 mt-5">
+        <div class="container text-center">
+          <p>&copy; 2024 PN WebDev. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

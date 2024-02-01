@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial';
+  }
+  .navbar {
+    background-color: #343a40;
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-color: #e0e0e0;
+  }
+  .jumbotron {
+    background-color: #e0e0e0;
+    margin-bottom: -2rem;
+  }
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+.technology-box {
+      border: 1px solid #ddd;
+      padding: 25px;
+      margin: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .box-html {
+      background-color: #e44d26;
+      color: #fff;
+    }
+    .box-css {
+      background-color: #2965f1;
+      color: #fff;
+    }
+    .box-js {
+      background-color: #f0db4f;
+      color: #000;
+    }
+    .box-react {
+      background-color: #61dafb;
+      color: #000;
+    }
+    .section {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #6c757d;
+      margin-bottom: 50px;
+    }
+    .project-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    .project-card.animated-card {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .calculator-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .calculation-entry {
+      margin-bottom: 10px;
+    }
